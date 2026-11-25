@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Gambarino", Georgia, "Times New Roman", serif;
+  --font-sans: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-forest: #244B3B;
+  --color-forest-deep: #1A382B;
+  --color-sage: #A7B89B;
+  --color-sage-wash: #EBF0E6;
+  --color-cream: #F8F5EC;
+  --color-warm-white: #FFFEFA;
+  --color-gold: #C6A66A;
+  --color-charcoal: #30362F;
+  --color-charcoal-muted: #555D54;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.65;
+    scroll-behavior: smooth;
+    background-color: #F8F5EC;
+    color: #30362F;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Gambarino", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-synthesis-weight: auto;
+    color: #244B3B;
+    text-wrap: balance;
+  }
+
+  a,
+  button {
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid #C6A66A;
+    outline-offset: 2px;
+  }
+}
+
+.article-prose {
+  max-width: 650px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #30362F;
+}
+
+.article-prose p + p {
+  margin-top: 1.35rem;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Gambarino", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-synthesis-weight: auto;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "P3J Add Life Circle",
+  "description": "A caring online community for women over 55 to learn, share healthy practices, and grow older together at home. Guided by Parasparopagraho Jīvānām.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
